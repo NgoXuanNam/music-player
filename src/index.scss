@@ -1,0 +1,73 @@
+@import 'normalize.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --height-header-footer: 100px;
+
+}
+
+.section{
+  height: calc(100vh - var(--height-header-footer)*2);
+}
+.playingAudio{
+  background-color: rgb(15 23 42) !important;
+}
+
+.rhap_time, .rhap_current-time{
+  color: #fff !important;
+}
+@media (max-width: 739px){
+  :root{
+  --height-header: 70px;
+  --height-footer: 100px;
+    
+  }
+  .header {
+    .navbar{
+      height: var(--height-header-footer);
+      span{
+        font-size: 25px;
+      }
+    }
+  }
+    .section{
+      height: calc(100vh - (var(--height-header-footer) + var(--height-footer) ));
+      display: flex;
+      flex-direction: column;
+    }
+    .detailSong{
+      height: 40%;
+      padding: 0;
+    }
+    .detailSong_heading{
+      display: none;
+      
+      
+    }
+    .detailSong_body{
+      margin: 0;
+      padding: 15px 0;
+      img{
+        border-radius: 50%;
+        width: 45%;
+        height: 45%;
+      }
+      .detailSong_body-author{
+        display: none;
+      }
+    }
+    .listSong{
+      font-size: 14px;
+      table{
+        thead{
+          background-color: rgb(15 23 42);
+        }
+      }
+    }
+    .footer{
+      height: var(--height-header-footer);
+    }
+}
