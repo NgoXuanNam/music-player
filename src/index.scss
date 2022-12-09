@@ -42,7 +42,10 @@
       flex-direction: column;
     }
     .detailSong{
-      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 46%;
       padding: 0;
       overflow-y: unset;
     }
@@ -65,10 +68,10 @@
     }
     .listSong{
       font-size: 14px;
+      flex: 1;
       table{
         thead{
           background-color: rgb(15 23 42);
-          top: -2%;
         }
       }
     }
