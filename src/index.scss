@@ -12,6 +12,9 @@
 .section{
   height: calc(100vh - var(--height-header-footer)*2);
 }
+.detailSong::-webkit-scrollbar{
+  display: none;
+}
 .playingAudio{
   background-color: rgb(15 23 42) !important;
 }
@@ -41,6 +44,7 @@
     .detailSong{
       height: 40%;
       padding: 0;
+      overflow-y: unset;
     }
     .detailSong_heading{
       display: none;
